@@ -1,0 +1,34 @@
+﻿@model StudentskoZivljenje.Models.Student
+@{
+    ViewData["Title"] = "Registracija";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Registracija</h1>
+    <p>Registrirajte se.</p>
+</div>
+<div class="text-center">
+    <h1 class="display-4">Stipendija Registration</h1>
+</div>
+
+<form asp-controller="Home" asp-action="SubmitRegistration" method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" asp-for="ime" /></td>
+                <td><input type="text" asp-for="priimek" /></td>
+                <td><input type="email" asp-for="naslov" /></td>
+                <td><button type="submit">Register</button></td>
+                <td><form asp-controller="Home" asp-action="RegistracijaViewModel" method="post" enctype="multipart/form-data" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

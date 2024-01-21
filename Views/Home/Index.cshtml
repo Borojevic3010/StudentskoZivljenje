@@ -4,5 +4,20 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Pozdravljeni! Dobrodošli v Študentsko življenje.</p>
 </div>
+<form asp-action="VpisTecaj" method="post">
+    <button type="submit">Go to VpisTecaj Window</button>
+</form>
+<form asp-action="Hobi" method="post">
+    <button type="submit">Go to Hobi Window</button>
+</form>
+<form asp-action="Dom" method="post">
+    <button type="submit">Go to Dom Window</button>
+</form>
+<form asp-controller="Home" asp-action="Stipendija" method="get">
+    <button type="submit">Go to Stipendija Window</button>
+</form>
+<form asp-action="Registracija" method="post">
+    <button type="submit">Go to Registracija Window</button>
+</form>

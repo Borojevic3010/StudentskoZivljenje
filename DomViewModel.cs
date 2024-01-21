@@ -1,4 +1,5 @@
 using System;
+using StudentskoZivljenje.Models;
 
 public class DomViewModel {
 	private Student student;

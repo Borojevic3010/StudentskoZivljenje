@@ -1,4 +1,5 @@
 using System;
+using StudentskoZivljenje.Models;
 
 public class VpisTecajViewModel {
 	private Student student;

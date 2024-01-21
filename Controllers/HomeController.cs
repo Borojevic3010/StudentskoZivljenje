@@ -16,6 +16,32 @@ namespace StudentskoZivljenje.Controllers
         public IActionResult Index()
         {
             return View();
+            return RedirectToAction("Dom");
+        }
+
+        public IActionResult Dom()
+        {
+            return View();
+        }
+
+        public IActionResult Hobi()
+        {
+            return View();
+        }
+
+        public IActionResult Registracija()
+        {
+            return View();  
+        }
+
+        public IActionResult Stipendija()
+        {
+            return View();
+        }
+
+        public IActionResult VpisTecaj()
+        {
+            return View();
         }
 
         public IActionResult Privacy()

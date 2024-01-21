@@ -1,12 +1,15 @@
 using System;
+using StudentskoZivljenje.Models;
 
 public class StipendijaViewModel {
-	private Student student;
+	public Student student;
 
-	public Student GetStudent() {
+	public Student GetStudent()
+	{
 		return this.student;
 	}
-	public void SaveData() {
+	public void SaveData()
+	{
 		throw new System.NotImplementedException("Not implemented");
 	}
 

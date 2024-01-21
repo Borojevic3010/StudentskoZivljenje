@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using System;
 
 public class StipendijaWindow : MainWindow  {
@@ -9,5 +10,12 @@ public class StipendijaWindow : MainWindow  {
 	public override void Close() {
 		throw new System.NotImplementedException("Not implemented");
 	}
+
+    [HttpGet]
+    public override IActionResult StipendijaRedirectWindow()
+    {
+        //var model = new StipendijaViewModel();
+		return View("Stipendija", vm);
+    }
 
 }

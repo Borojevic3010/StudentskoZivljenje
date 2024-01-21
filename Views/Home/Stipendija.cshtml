@@ -1,0 +1,38 @@
+﻿@model StudentskoZivljenje.Models.Student
+@{
+    ViewData["Title"] = "Stipendija";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Prijava</h1>
+    <p>Prijavite se na štipendijo.</p>
+</div>
+
+@using (Html.BeginForm("SubmitApplication", "Stipendija", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ime)
+        @Html.TextBoxFor(model => model.ime, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.studentID)
+        @Html.TextBoxFor(model => model.studentID, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ocena)
+        @Html.TextBoxFor(model => model.ocena, new { @class = "form-control" })
+    </div>
+
+    <!-- Add other form fields as needed -->
+
+    <button type="submit" class="btn btn-primary">Submit Application</button>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+

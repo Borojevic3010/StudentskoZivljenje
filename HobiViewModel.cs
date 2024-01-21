@@ -1,4 +1,6 @@
 using System;
+using StudentskoZivljenje.Models;
+
 
 public class HobiViewModel {
 	private Student student;
